@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mac_tags",
+  "info": {
+    "singularName": "mac-tag",
+    "pluralName": "mac-tags",
+    "displayName": "Mac tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "mac_tags"
+    },
+    "Touchbar": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

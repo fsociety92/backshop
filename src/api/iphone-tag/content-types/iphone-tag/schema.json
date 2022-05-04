@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "iphone_tags",
+  "info": {
+    "singularName": "iphone-tag",
+    "pluralName": "iphone-tags",
+    "displayName": "Iphone tag",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "iphone_tags"
+    },
+    "Dualsim": {
+      "type": "boolean",
+      "required": true
+    },
+    "Lidar": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  }
+}
